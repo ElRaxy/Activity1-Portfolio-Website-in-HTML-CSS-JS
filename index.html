@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio WebSite</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/71c885fd1e.js" crossorigin="anonymous"></script>
 </head>
@@ -12,13 +12,15 @@
     <div class="container">
         <nav>
             <img src="img/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Student 2 SMR</p>
@@ -30,11 +32,13 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="img/user.png" >
+                <br>
+                <img src="img/img1.png" >
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat recusandae sed explicabo corrupti asperiores maxime doloremque. Saepe aliquam aspernatur, totam perspiciatis voluptate laudantium distinctio pariatur. Veniam suscipit quam molestias?</p>
+                <p>I am a student, I love learning, especially about technology.
+                    I would like to expand my knowledge, in a practical way. I want to learn about commands, FrontEnd programming and cybersecurity.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -66,28 +70,28 @@
             <div>
                 <i class="fa-solid fa-code"></i> 
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, sunt sit laudantium ad quod quas! Praesentium, obcaecati nostrum natus ea vel quae mollitia voluptas corporis ullam aliquam quam illo delectus.</p>
-                <a href="#">Learn more</a>
+                <p>Being a web designer involves creating attractive and functional websites, combining graphic design, technical skills and a focus on user experience to achieve business goals.</p>
+                <a href="https://www.domestika.org/es/blog/7895-que-hace-un-web-designer" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-linux"></i>
                 <i class="fa-brands fa-windows"></i>
                 <h2>Linux and Windows Commands</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, sunt sit laudantium ad quod quas! Praesentium, obcaecati nostrum natus ea vel quae mollitia voluptas corporis ullam aliquam quam illo delectus.</p>
-                <a href="#">Learn more</a>
+                <p>Being a system administrator in Linux and Windows environments involves the efficient management of servers and operating systems, ensuring security, availability and optimal performance. This is achieved through the implementation of security policies, automation of tasks, and effective troubleshooting. System administration requires a solid knowledge of commands and scripts, as well as the ability to provide technical support to users, while maintaining a reliable and secure IT infrastructure.</p>
+                <a href="https://www.freelancermap.com/blog/es/que-hace-un-administrador-de-servidores/" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-laptop"></i>
                 <h2>Equipment Repairs</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, sunt sit laudantium ad quod quas! Praesentium, obcaecati nostrum natus ea vel quae mollitia voluptas corporis ullam aliquam quam illo delectus.</p>
-                <a href="#">Learn more</a>
+                <p>As an equipment repairman, I specialise in identifying and troubleshooting both hardware and software problems in a variety of electronic devices. My experience includes accurate diagnosis, efficient repairs, and preventive maintenance recommendations. In addition, I have developed strong documentation and communication skills, allowing me to provide a complete and satisfactory service to customers, thus contributing to the recovery and optimal functioning of equipment.</p>
+                <a href="https://www.euroinnova.edu.es/blog/que-hace-un-tecnico-en-mantenimiento-de-equipos-de-computo" target="_blank">Learn more</a>
             </div>
         </div>
     </div>
 </div>
 <!--portfolio-->
-<div id="portfoli">
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -96,7 +100,7 @@
                 <div class="layer">
                     <h3>Social Media App</h3>
                     <p>The app connects you yo the talented people around the world. Download it form play store.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -104,7 +108,7 @@
                 <div class="layer">
                     <h3>Music App</h3>
                     <p>The app to listen to music from anywhere in the world. Download it from the play store.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://spotify.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -112,11 +116,11 @@
                 <div class="layer">
                     <h3>Online Shopping App</h3>
                     <p>The app to buy products completely online and receive them at home. Download it from the play store.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://www.amazon.es/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#"class="btn">See more</a>
+        <a href="https://es.wix.com/blog/2021/08/los-mejores-sitios-web" target="_blank" class="btn">See more</a>
     </div>
 </div>
 <!--contact-->
@@ -126,23 +130,27 @@
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>alexmico2006@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>693 91 25 60</p>
+                <p><i class="fa-solid fa-square-phone"></i>693 91 24 60</p>
                 <div class="social-icons">
                     <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
                     <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://es.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
     </div>
 </div>
 
@@ -163,6 +171,35 @@
     }
 
 </script>
+
+<script>
+   
+   var sidemenu = document.getElementById("sidemenu");
+
+   function openmenu(){
+        sidemenu.style.right = "0";
+   }
+   function closemenu(){
+        sidemenu.style.right = "-200px";
+   }
+
+
+</script>
+
+<script>
+    const form = document.querySelector('form');
+    const scriptURL = 'https://docs.google.com/spreadsheets/d/1kQkJRufnNaUumM7ONEMvL27SfEsB314ZqYuikhT5XtA/edit#gid=0';
+  
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => response.text())
+            .then(data => console.log('Success!', data))
+            .catch(error => console.error('Error!', error))
+});
+
+  </script>
+  
 
 </body>
 </html>
