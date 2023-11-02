@@ -39,11 +39,10 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>I am a student, I love learning, especially about technology.
                     I would like to expand my knowledge, in a practical way. I want to learn about commands, FrontEnd programming and cybersecurity.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills">Skills</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                    </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Linux</span><br>Basic and Medium Commands</li>
@@ -158,19 +157,30 @@
 
 <script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+// Obtenemos los elementos relevantes
+var tablinks = document.querySelectorAll(".tab-links");
+var tabcontents = document.querySelectorAll(".tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+tablinks.forEach(function (tablink) {
+    tablink.addEventListener("click", function () {
+        var tab = this.getAttribute("data-tab");
+        
+        // Quitamos la clase "active-link" de todos los elementos
+        tablinks.forEach(function (tl) {
+            tl.classList.remove("active-link");
+        });
+        // Agregamos la clase "active-link" solo al elemento clicado
+        this.classList.add("active-link");
+        
+        // Ocultamos todos los contenidos
+        tabcontents.forEach(function (tc) {
+            tc.style.display = "none";
+        });
+        // Mostramos solo el contenido correspondiente
+        document.getElementById(tab).style.display = "block";
+    });
+});
+
 
 </script>
 
