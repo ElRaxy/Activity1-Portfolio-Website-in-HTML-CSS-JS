@@ -24,7 +24,7 @@
         </nav>
         <div class="header-text">
             <p>Student 2 SMR</p>
-            <h1>Hi, I'm <span>Alex</span><br> From Spain</h1>
+            <h1>Hi, I'm <span>Alex</span><br>Mico From Spain</h1>
     </div>
 </div>
 <!-- About -->
@@ -48,7 +48,9 @@
                     <ul>
                         <li><span>Linux</span><br>Basic and Medium Commands</li>
                         <li><span>Windows</span><br>Commands and Scripts</li>
-                        <li><span>Systems Operating Systems</span><br>Installation of network operating systems</li>
+                        <li><span>Operating Systems</span><br>Installation of network operating systems</li>
+                        <li><span>Web Design</span><br>Web application development</li>
+                        <li><span>Equipment repairs</span><br>Hardware expert</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -77,14 +79,14 @@
                 <i class="fa-brands fa-linux"></i>
                 <i class="fa-brands fa-windows"></i>
                 <h2>Linux and Windows Commands</h2>
-                <p>Being a system administrator in Linux and Windows environments involves the efficient management of servers and operating systems, ensuring security, availability and optimal performance. This is achieved through the implementation of security policies, automation of tasks, and effective troubleshooting. System administration requires a solid knowledge of commands and scripts, as well as the ability to provide technical support to users, while maintaining a reliable and secure IT infrastructure.</p>
+                <p>System administrator with experience in Linux and Windows. Focus on security, automation and troubleshooting. Skills in command, scripting and technical support. Committed to reliability and security of IT infrastructure.</p>
                 <a href="https://www.freelancermap.com/blog/es/que-hace-un-administrador-de-servidores/" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-laptop"></i>
                 <h2>Equipment Repairs</h2>
-                <p>As an equipment repairman, I specialise in identifying and troubleshooting both hardware and software problems in a variety of electronic devices. My experience includes accurate diagnosis, efficient repairs, and preventive maintenance recommendations. In addition, I have developed strong documentation and communication skills, allowing me to provide a complete and satisfactory service to customers, thus contributing to the recovery and optimal functioning of equipment.</p>
+                <p>Experienced equipment repairman proficient in diagnosing and fixing hardware and software issues in electronic devices. Skilled in preventive maintenance, documentation, and customer service for optimal equipment functionality.</p>
                 <a href="https://www.euroinnova.edu.es/blog/que-hace-un-tecnico-en-mantenimiento-de-equipos-de-computo" target="_blank">Learn more</a>
             </div>
         </div>
@@ -185,21 +187,6 @@
 
 
 </script>
-
-<script>
-    const form = document.querySelector('form');
-    const scriptURL = 'https://docs.google.com/spreadsheets/d/1kQkJRufnNaUumM7ONEMvL27SfEsB314ZqYuikhT5XtA/edit#gid=0';
-  
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => response.text())
-            .then(data => console.log('Success!', data))
-            .catch(error => console.error('Error!', error))
-});
-
-  </script>
-  
 
 </body>
 </html>

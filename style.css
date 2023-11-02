@@ -127,17 +127,20 @@ nav ul li a:hover::after{
 
 .tab-links.active-link::after{
     width: 50%;
-
 }
 
 .tab-contenst ul li {
     list-style-type: none;
     margin: 10px 0;
+    font-size: 15px;
 }
 
 .tab-contents ul li span{
     color: #1A5874;
-    font-size: 14px;
+    font-size: 19px;
+}
+.tab-contents ul li:not(:has(span)) {
+    font-size: 11px;
 }
 .tab-contents{
     display: none;
@@ -349,7 +352,7 @@ nav .fas{
     #header{
         background-image: url(img/phone-background.png);
     }
-    .heder-text{
+    .header-text{
         margin-top: 100%;
         font-size: 16px;
     }
